@@ -25,9 +25,9 @@ pipeline{
             nexusArtifactUploader artifacts: [[artifactId: 'bioMedical', 
             classifier: '', file: 'target/bioMedical-0.0.2-SNAPSHOT.jar',
              type: 'jar']], credentialsId: 'nexusid', 
-             groupId: 'Qa', nexusUrl: '198.58.119.40:8081/repository/folarin_repo/', 
+             groupId: 'Qa', nexusUrl: '198.58.119.40:8081', 
              nexusVersion: 'nexus3', protocol: 'http',
-             repository: 'folarin_repo', version: '002'
+             repository: 'folarin_repo', version: '0.0.2-SNAPSHOT'
         }
     }
     
